@@ -1,0 +1,20 @@
+{% load render_vite_bundle %}
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- 
+  For this base.html to work in dev and in production,
+  you'll need to set a couple of keys inside your settings.py.
+  Another file in this gist shows which ones you'll really need.
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+<body>
+  <div id="root"></div>
+  {% render_vite_bundle %}
+</body>
+</html>
